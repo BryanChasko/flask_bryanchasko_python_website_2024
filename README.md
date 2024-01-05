@@ -26,8 +26,12 @@ The main directories and files include:
 ## Installation 🚀
 
 1. Clone the repository.
-2. Set up a virtual environment: `python3 -m venv foo_venv` and activate it.
-3. Install the dependencies: `pip install -r requirements.txt`.
+2. Set up a virtual environment: `python3 -m venv foo_venv`.
+    i.e., `python3 -m venv flask_bryanchasko_venv`
+3. Activate the virtual environment: `source foo_venv/bin/activate` 
+    i.e., `source flask_bryanchasko_venv/bin/activate`
+    when done with your virtual environment session run `deactivate`
+4. Install the dependencies: `pip install -r requirements.txt`.
 
 ## Usage 🖥️
 
