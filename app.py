@@ -42,4 +42,4 @@ def url_generator():
 if __name__ == '__main__':
     app.config['FREEZER_DESTINATION'] = 'build'
     freezer.freeze()
-    app.run(debug=True)
+    app.run(debug=False)

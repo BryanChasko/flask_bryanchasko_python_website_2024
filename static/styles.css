@@ -1,0 +1,181 @@
+/* Global Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 500;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Sidebar */
+.sidebar {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #f8f9fa;
+    padding-top: 60px;
+    z-index: 1;
+    /* Ensure sidebar stays on top */
+    overflow-y: auto;
+    /* Enable scrolling if content overflows */
+}
+
+.sidebar h3 {
+    margin-left: 15px;
+    font-size: 1.5rem;
+    color: #333;
+    /* Adjust text color for better visibility */
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar a {
+    padding: 10px 15px;
+    display: block;
+    color: #333;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    background-color: #e9ecef;
+}
+
+/* Content */
+.content {
+    margin-left: 250px;
+    padding: 20px;
+}
+
+/* Blog Content */
+.blog-content {
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.blog-content h2 {
+    color: #333;
+}
+
+.blog-content p {
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Contact Info */
+.contact-info {
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Resume Container */
+.resume-container {
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.job-experience {
+    margin-bottom: 20px;
+}
+
+.job-experience h2 {
+    color: #333;
+}
+
+.job-experience p {
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Main Content */
+.main-content {
+    padding: 20px;
+}
+
+.main-content h1 {
+    color: #000;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.main-content p {
+    color: #333;
+    line-height: 1.6;
+}
+
+.event-section {
+    margin-top: 20px;
+}
+
+.event-section h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.event-section .event-details {
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Portfolio Container */
+.portfolio-container {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.portfolio-container h1 {
+    font-size: 36px;
+    color: #00000f;
+    margin-bottom: 20px;
+}
+
+.portfolio-container p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.portfolio-item {
+    margin-bottom: 20px;
+}
+
+.portfolio-item h2 {
+    color: #333;
+}
+
+.portfolio-item p {
+    color: #666;
+    line-height: 1.6;
+}
