@@ -24,6 +24,6 @@ def contact():
     return render_template('contact.html', title='Contact Page')
 
 if __name__ == '__main__':
-    app.run(debug=True)
     freezer = Freezer(app)
     freezer.freeze()
+    app.run(debug=True)

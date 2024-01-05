@@ -1,78 +1,18 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<!DOCTYPE html>
-<html>
-
-<head>
-    <title>{{ title }}</title>
-    <style>
-        /* Example CSS for animations */
-        /* Gentle pulsing animation */
-        @keyframes pulse {
-            0% {
-                color: #333;
-                font-weight: normal;
-            }
-
-            50% {
-                color: #1a1a1a;
-                font-weight: bold;
-            }
-
-            100% {
-                color: #333;
-                font-weight: normal;
-            }
-        }
-
-        .animated {
-            animation: pulse 3s ease-in-out infinite;
-        }
-
-        /* Additional styling for the blog content */
-        .blog-content {
-            font-family: Arial, sans-serif;
-            padding: 20px;
-            background-color: #f8f9fa;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            margin-top: 20px;
-        }
-
-        .blog-content h2 {
-            color: #333;
-        }
-
-        .blog-content p {
-            color: #666;
-            line-height: 1.6;
-        }
-
-        .blog-content a {
-            color: #1a1a1a;
-        }
-    </style>
-</head>
-
-<body>
-    <div class="blog-content">
-        <h2>Upcoming Blogs</h2>
-        <p class="animated">Coming Soon</p>
-        <p>
-            <li>Deploying Hugging Face Falcon on SageMaker</li>
-            <li>
-                Machine Learning Essentials with Cats
-            <li>Using Amazon Bedrock To Battle The Red Dragon Compiler Book.
-                <ul class="nested-list">
-                    <li><a href="https://www.amazon.com/Compilers-Principles-Techniques-Tools-2nd/dp/0321486811">re:
-                            Compilers:
-                            Principals, Techniques and Tools</a></li>
-                </ul>
-
-        </p>
-    </div>
-</body>
-
-</html>
+<div class="blog-content">
+    <h2>Upcoming Blogs</h2>
+    <p class="animated">Coming Soon</p>
+    <p>
+        <li>Deploying Hugging Face Falcon on SageMaker</li>
+        <li>Machine Learning Essentials with Cats</li>
+        <li>Using Amazon Bedrock To Battle The Red Dragon Compiler Book.
+            <ul class="nested-list">
+                <li><a href="https://www.amazon.com/Compilers-Principles-Techniques-Tools-2nd/dp/0321486811">re:
+                        Compilers: Principals, Techniques and Tools</a></li>
+            </ul>
+        </li>
+    </p>
+</div>
 {% endblock %}

@@ -1,201 +1,133 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <title>{{ title }}</title>
-    <style>
-        /* Resume Page Styles */
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            background-color: #f8f9fa;
-            color: #333;
-            margin: 0;
-            padding: 0;
-        }
+<div class="resume-container">
+    <h1>My Career (Bryan Chasko)</h1>
+    <div class="job-experience">
+        <h2>Chief Technology Officer - Electronic Caregiver, Inc. (ECG)</h2>
+        <p>Las Cruces, NM | 2015/02 to 2020/07</p>
+        <p>Game tech powered patient-centric healthcare technology for chronically disabled & elderly; spurred
+            growth from a napkin to Inc.'s 1000 fastest-growing private firms.</p>
+        <ul>
+            <li>Utilized AAA Game Engines (Unreal, O3DE, Amazon Sumerian, Babylon.js) and 3D pipeline (Maya,
+                Substance) to create accessible interfaces powered by an ambient voice assistant and 3D avatar.
+                Worked under the standard of assuming our users had a major disability, i.e., “Can they use this
+                interface if they can’t hear? Speak? See? Use their hands?”</li>
+            <li>Utilized Tableau style guide in developing clinical interfaces for actionable insights and alerts.
+            </li>
+            <li>Established 3 university clinical research laboratories with focus on human movement, motion
+                capture, virtual reality, and augmented reality. Obtained grant with Department of Energy and
+                performed research in partnership with The National Laboratories.</li>
+            <li>Established UX feedback centers while deploying to conduct field research nationwide alongside
+                independent and partner 3rd party UX research.</li>
+            <li>Managed all product teams including 3 full-stack game development teams with integrated UX
+                researchers on each team alongside artists, technical artists, dev-ops, programmers, & specialists.
+                Utilized 3-week user feedback cycles in addition to a-b testing data, ticketing systems, call-center
+                analytics, and cross-team collaboration. Trained all disciplines on AWS cloud tools and scrum,
+                achieving 40+ scrum and AWS certified team members in under 6 months.</li>
+            <li>Established impactful partnerships (AWS, Google, Dell), gained game product presentation
+                experience at the Game Developers Conference, AWS Community Day Dublin and reInvent.</li>
+        </ul>
+    </div>
 
-        .resume-container {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
+    <div class="job-experience">
+        <h2>Senior Full Stack Developer - X2nSat, Inc.</h2>
+        <p>Petaluma, CA | 2021/07 to 2022/12</p>
+        <p>Built rugged data management solutions utilizing satellites & 5G for energy & academia. Reduced
+            workload costs 12x with serverless cloud architectures, across 50+ application stacks, implemented 5
+            data store types for purpose-based utilization and analytics.</p>
+        <ul>
+            <li>Created data pipelines with APIs, authentication, and databases, bringing 100s of new sites online
+                with end-to-end data solutions streaming an average of 8 sensors every 5 minutes.</li>
+            <li>Launched 2 beautiful responsive portals featuring top-tier design systems and access for 200+
+                users.</li>
+        </ul>
+    </div>
+    <div class="job-experience">
+        <h2>Technology Infrastructure Supervisor - Alamogordo Public Schools</h2>
+        <p>Alamogordo, NM | 2021/12 to 2022/07</p>
+        <p>Agile transformation in hometown public school district with 800 staff, 5500 students, & 16 campuses.</p>
+        <ul>
+            <li>Worked alongside school Psychologists to perform sentiment analysis, filtering, and interventions
+                for
+                sensitive audiences (k-12 students). Prevented bullying, harassment, and using network data, online
+                communication monitoring, social signs, and community training alongside experts and parents.</li>
+            <li>Traveled throughout the district conducting field research ensuring fairness and access.</li>
+            <li>Funded and replaced 100% of student devices, launched the E-Sports program.</li>
+        </ul>
+    </div>
 
-        h1 {
-            font-size: 36px;
-            color: #007bff;
-            margin-bottom: 20px;
-        }
+    <div class="job-experience">
+        <h2>VP, Public Relations - LifeSupport Medical, LLC</h2>
+        <p>Las Cruces, NM | 2009/05 to 2015/01</p>
+        <ul>
+            <li>Managed 140+ websites, major events, industry trade shows, press releases, shareholder news, &
+                social media.
+            </li>
+            <li>Established a mobile motion capture laboratory and pipeline for clinical research, providing data
+                for 12+
+                academic publications, focusing on data collection, cleaning, processing techniques, and time-series
+                data.
+            </li>
+            <li>Implemented head-worn augmented reality interface (3D and voice UI) for iPhone (Swift) and Android
+                (Java),
+                validating research methods for consumer applications.</li>
+            <li>Migrated Salesforce data to create a custom CRM with visualizations for actionable insights and
+                reporting.
+            </li>
+            <li>Conducted field research surveys, collaborated with academia, involving over 3000 participants
+                across
+                states, emphasizing public awareness and engagement.</li>
+        </ul>
+    </div>
 
-        h2 {
-            font-size: 24px;
-            margin-bottom: 10px;
-        }
+    <div class="job-experience">
+        <h2>Sales & Engineering Manager - LaserShield Systems, Inc.</h2>
+        <p>Las Cruces, NM | 2005/05 to 2008/12</p>
+        <ul>
+            <li>Collaborated with consumer electronics market research teams and retailers in field trials across 23
+                states,
+                using mainstream marketing strategies.</li>
+            <li>Oversaw the collection of field data and managed sales follow-ups, returns processes, and
+                engineering on
+                product changes, providing SAP reports.</li>
+            <li>Implemented customer relationship management (CRM) tools for enhanced management visibility.</li>
+        </ul>
+    </div>
 
-        p {
-            font-size: 16px;
-            margin-bottom: 10px;
-        }
+    <div class="job-experience">
+        <h2>Honorable Military Service, Operation Enduring Freedom</h2>
+        <p>US Army. Ft Bragg, NC. Electronic/Mechanical Troubleshooting & Repair 1999/06 to 2002/06</p>
 
-        .job-experience {
-            margin-bottom: 20px;
-            padding-bottom: 20px;
-            border-bottom: 1px solid #eee;
-        }
 
-        .job-experience:last-child {
-            border-bottom: none;
-            margin-bottom: 0;
-            padding-bottom: 0;
-        }
-
-        .job-title {
-            font-weight: bold;
-            color: #007bff;
-            margin-bottom: 5px;
-        }
-
-        .job-location {
-            color: #777;
-        }
-    </style>
-</head>
-
-<body>
-    <div class="resume-container">
-        <h1>My Career (Bryan Chasko)</h1>
+        <!-- Other job experiences and details -->
+        <!-- ... -->
         <div class="job-experience">
-            <h2>Chief Technology Officer - Electronic Caregiver, Inc. (ECG)</h2>
-            <p>Las Cruces, NM | 2015/02 to 2020/07</p>
-            <p>Game tech powered patient-centric healthcare technology for chronically disabled & elderly; spurred
-                growth from a napkin to Inc.'s 1000 fastest-growing private firms.</p>
+            <h2>Education</h2>
+            <p>New Mexico State University-Alamogordo, Associate of Arts, Student of The Semester</p>
+        </div>
+        <div class="job-experience">
+            <h2>Additional Skills</h2>
+            <p>Design and media (Adobe Creative Cloud, Figma). Transformations, business insights, iso
+                documentation, application of managed machine learning models and integration of AI services.</p>
+        </div>
+        <div class="job-experience">
+            <h2>Certifications</h2>
+            <p>AWS Machine Learning Specialty. Scrum Master with UX Focus.</p>
+        </div>
+        <div class="job-experience">
+            <h2>Inventions</h2>
             <ul>
-                <li>Utilized AAA Game Engines (Unreal, O3DE, Amazon Sumerian, Babylon.js) and 3D pipeline (Maya,
-                    Substance) to create accessible interfaces powered by an ambient voice assistant and 3D avatar.
-                    Worked under the standard of assuming our users had a major disability, i.e., “Can they use this
-                    interface if they can’t hear? Speak? See? Use their hands?”</li>
-                <li>Utilized Tableau style guide in developing clinical interfaces for actionable insights and alerts.
-                </li>
-                <li>Established 3 university clinical research laboratories with focus on human movement, motion
-                    capture, virtual reality, and augmented reality. Obtained grant with Department of Energy and
-                    performed research in partnership with The National Laboratories.</li>
-                <li>Established UX feedback centers while deploying to conduct field research nationwide alongside
-                    independent and partner 3rd party UX research.</li>
-                <li>Managed all product teams including 3 full-stack game development teams with integrated UX
-                    researchers on each team alongside artists, technical artists, dev-ops, programmers, & specialists.
-                    Utilized 3-week user feedback cycles in addition to a-b testing data, ticketing systems, call-center
-                    analytics, and cross-team collaboration. Trained all disciplines on AWS cloud tools and scrum,
-                    achieving 40+ scrum and AWS certified team members in under 6 months.</li>
-                <li>Established impactful partnerships (AWS, Google, Dell), gained game product presentation
-                    experience at the Game Developers Conference, AWS Community Day Dublin and reInvent.</li>
+                <li>3D environment risks identification utilizing reinforced learning. US Patent 11791050</li>
+                <li>Consumer application for mobile assessment of functional capacity and falls risk. US Patent
+                    11213224</li>
+                <li>Systems and methods for a virtual, intelligent customizable personal medical assistant. US
+                    Patent
+                    11488724</li>
             </ul>
         </div>
 
-        <div class="job-experience">
-            <h2>Senior Full Stack Developer - X2nSat, Inc.</h2>
-            <p>Petaluma, CA | 2021/07 to 2022/12</p>
-            <p>Built rugged data management solutions utilizing satellites & 5G for energy & academia. Reduced
-                workload costs 12x with serverless cloud architectures, across 50+ application stacks, implemented 5
-                data store types for purpose-based utilization and analytics.</p>
-            <ul>
-                <li>Created data pipelines with APIs, authentication, and databases, bringing 100s of new sites online
-                    with end-to-end data solutions streaming an average of 8 sensors every 5 minutes.</li>
-                <li>Launched 2 beautiful responsive portals featuring top-tier design systems and access for 200+
-                    users.</li>
-            </ul>
-        </div>
-        <div class="job-experience">
-            <h2>Technology Infrastructure Supervisor - Alamogordo Public Schools</h2>
-            <p>Alamogordo, NM | 2021/12 to 2022/07</p>
-            <p>Agile transformation in hometown public school district with 800 staff, 5500 students, & 16 campuses.</p>
-            <ul>
-                <li>Worked alongside school Psychologists to perform sentiment analysis, filtering, and interventions
-                    for
-                    sensitive audiences (k-12 students). Prevented bullying, harassment, and using network data, online
-                    communication monitoring, social signs, and community training alongside experts and parents.</li>
-                <li>Traveled throughout the district conducting field research ensuring fairness and access.</li>
-                <li>Funded and replaced 100% of student devices, launched the E-Sports program.</li>
-            </ul>
-        </div>
+    </div>
 
-        <div class="job-experience">
-            <h2>VP, Public Relations - LifeSupport Medical, LLC</h2>
-            <p>Las Cruces, NM | 2009/05 to 2015/01</p>
-            <ul>
-                <li>Managed 140+ websites, major events, industry trade shows, press releases, shareholder news, &
-                    social media.
-                </li>
-                <li>Established a mobile motion capture laboratory and pipeline for clinical research, providing data
-                    for 12+
-                    academic publications, focusing on data collection, cleaning, processing techniques, and time-series
-                    data.
-                </li>
-                <li>Implemented head-worn augmented reality interface (3D and voice UI) for iPhone (Swift) and Android
-                    (Java),
-                    validating research methods for consumer applications.</li>
-                <li>Migrated Salesforce data to create a custom CRM with visualizations for actionable insights and
-                    reporting.
-                </li>
-                <li>Conducted field research surveys, collaborated with academia, involving over 3000 participants
-                    across
-                    states, emphasizing public awareness and engagement.</li>
-            </ul>
-        </div>
-
-        <div class="job-experience">
-            <h2>Sales & Engineering Manager - LaserShield Systems, Inc.</h2>
-            <p>Las Cruces, NM | 2005/05 to 2008/12</p>
-            <ul>
-                <li>Collaborated with consumer electronics market research teams and retailers in field trials across 23
-                    states,
-                    using mainstream marketing strategies.</li>
-                <li>Oversaw the collection of field data and managed sales follow-ups, returns processes, and
-                    engineering on
-                    product changes, providing SAP reports.</li>
-                <li>Implemented customer relationship management (CRM) tools for enhanced management visibility.</li>
-            </ul>
-        </div>
-
-        <div class="job-experience">
-            <h2>Honorable Military Service, Operation Enduring Freedom</h2>
-            <p>US Army. Ft Bragg, NC. Electronic/Mechanical Troubleshooting & Repair 1999/06 to 2002/06</p>
-
-
-            <!-- Other job experiences and details -->
-            <!-- ... -->
-            <div class="job-experience">
-                <h2>Education</h2>
-                <p>New Mexico State University-Alamogordo, Associate of Arts, Student of The Semester</p>
-            </div>
-            <div class="job-experience">
-                <h2>Additional Skills</h2>
-                <p>Design and media (Adobe Creative Cloud, Figma). Transformations, business insights, iso
-                    documentation, application of managed machine learning models and integration of AI services.</p>
-            </div>
-            <div class="job-experience">
-                <h2>Certifications</h2>
-                <p>AWS Machine Learning Specialty. Scrum Master with UX Focus.</p>
-            </div>
-            <div class="job-experience">
-                <h2>Inventions</h2>
-                <ul>
-                    <li>3D environment risks identification utilizing reinforced learning. US Patent 11791050</li>
-                    <li>Consumer application for mobile assessment of functional capacity and falls risk. US Patent
-                        11213224</li>
-                    <li>Systems and methods for a virtual, intelligent customizable personal medical assistant. US
-                        Patent
-                        11488724</li>
-                </ul>
-            </div>
-
-        </div>
-</body>
-
-</html>
-{% endblock %}
+    {% endblock %}

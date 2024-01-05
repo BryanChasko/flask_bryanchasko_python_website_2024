@@ -1,99 +1,28 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<!DOCTYPE html>
-<html>
-
-<head>
-    <title>{{ title }}</title>
-    <style>
-        /* Example CSS for animations */
-        /* Subtle and slow bounce animation */
-        @keyframes bounce {
-
-            0%,
-            100% {
-                transform: translateY(0);
-            }
-
-            50% {
-                transform: translateY(-5px);
-            }
-        }
-
-        .animated {
-            animation: bounce 3s ease-in-out infinite;
-        }
-
-        /* Additional styling for the contact content */
-        .contact-info {
-            font-family: Arial, sans-serif;
-            padding: 20px;
-            background-color: #f8f9fa;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            margin-top: 20px;
-            text-align: center;
-        }
-
-        .contact-info h2 {
-            color: #333;
-            margin-bottom: 10px;
-        }
-
-        .contact-info p {
-            color: #666;
-            line-height: 1.6;
-        }
-
-        /* Social links */
-        .social-links {
-            margin-top: 20px;
-        }
-
-        .social-links a {
-            display: inline-block;
-            margin: 0 10px;
-            font-size: 24px;
-            text-decoration: none;
-            color: #007bff;
-            /* Twitter blue color */
-            transition: color 0.3s ease;
-        }
-
-        .social-links a:hover {
-            color: #55acee;
-            /* Lighter blue for hover (Twitter) */
-        }
-    </style>
-</head>
-
-<body>
-    <div class="contact-info">
-        <h2>Contact Me</h2>
-        <p class="animated">Feel free to reach out!</p>
-        <p>
-            Follow me on Threads <a href="https://threads.net/bryanChasko" target="_blank"
-                rel="noopener noreferrer">@bryanChasko</a> or X <a href="https://twitter.com/bryanChasko"
-                target="_blank" rel="noopener noreferrer">@bryanChasko</a>,
-            Add me on LinkedIn <a href="https://www.linkedin.com/in/BryanChasko" target="_blank"
-                rel="noopener noreferrer">/in/BryanChasko</a>,
-            See the world through my eyes on my seldom updated Instagram Wall <a
-                href="https://www.instagram.com/bryanChasko" target="_blank" rel="noopener noreferrer">@bryanChasko</a>.
-        </p>
-        <p>
-            Petaluma, California, USA<br>
-        </p>
-        <div class="social-links">
-            <!-- Emoji icons -->
-            <a href="https://X.com/bryanChasko" target="_blank" rel="noopener noreferrer" title="Twitter">🐦</a>
-            <a href="https://www.linkedin.com/in/BryanChasko" target="_blank" rel="noopener noreferrer"
-                title="LinkedIn">🔗</a>
-            <a href="https://www.instagram.com/bryanChasko" target="_blank" rel="noopener noreferrer"
-                title="Instagram">📸</a>
-        </div>
+<div class="contact-info">
+    <h2>Contact Me</h2>
+    <p class="animated">Feel free to reach out!</p>
+    <p>
+        Follow me on Threads <a href="https://threads.net/bryanChasko" target="_blank"
+            rel="noopener noreferrer">@bryanChasko</a> or X <a href="https://twitter.com/bryanChasko" target="_blank"
+            rel="noopener noreferrer">@bryanChasko</a>,
+        Add me on LinkedIn <a href="https://www.linkedin.com/in/BryanChasko" target="_blank"
+            rel="noopener noreferrer">/in/BryanChasko</a>,
+        See the world through my eyes on my seldom updated Instagram Wall <a
+            href="https://www.instagram.com/bryanChasko" target="_blank" rel="noopener noreferrer">@bryanChasko</a>.
+    </p>
+    <p>
+        Petaluma, California, USA<br>
+    </p>
+    <div class="social-links">
+        <!-- Emoji icons -->
+        <a href="https://X.com/bryanChasko" target="_blank" rel="noopener noreferrer" title="Twitter">🐦</a>
+        <a href="https://www.linkedin.com/in/BryanChasko" target="_blank" rel="noopener noreferrer"
+            title="LinkedIn">🔗</a>
+        <a href="https://www.instagram.com/bryanChasko" target="_blank" rel="noopener noreferrer"
+            title="Instagram">📸</a>
     </div>
-</body>
-
-</html>
+</div>
 {% endblock %}

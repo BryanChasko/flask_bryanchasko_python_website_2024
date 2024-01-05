@@ -1,69 +1,20 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <title>{{ title }}</title>
-    <style>
-        /* Portfolio Page Styles */
-        .portfolio-container {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        h1 {
-            font-size: 36px;
-            color: #00000f;
-            margin-bottom: 20px;
-        }
-
-        p {
-            font-size: 16px;
-            margin-bottom: 10px;
-        }
-
-        /* Animation */
-        @keyframes scale {
-            from {
-                transform: scale(0);
-            }
-
-            to {
-                transform: scale(1);
-            }
-        }
-
-        .animated {
-            animation: scale 1.5s ease-in-out;
-        }
-    </style>
-</head>
-
-<body>
-    <div class="portfolio-container">
-        <h1>Portfolio Page</h1>
-        <p class="animated">Check out my work and wade through my hobbies.</p>
-        <!-- Add your portfolio items here -->
-        <div class="portfolio-item">
-            <h2>Github</h2>
-            <p><a target="_blank" href="https://github.com/BryanChasko/">https://github.com/BryanChasko/</a></p>
-        </div>
-        <div class="portfolio-item">
-            <h2>AWS Heroes Bio</h2>
-            <p><a target="_blank"
-                    href="https://aws.amazon.com/developer/community/heroes/bryan-chasko/">https://aws.amazon.com/developer/community/heroes/bryan-chasko/</a>
-            </p>
-        </div>
-        <!-- Add more portfolio items as needed -->
+<div class="portfolio-container">
+    <h1>Portfolio Page</h1>
+    <p class="animated">Check out my work and wade through my hobbies.</p>
+    <!-- Add your portfolio items here -->
+    <div class="portfolio-item">
+        <h2>Github</h2>
+        <p><a target="_blank" href="https://github.com/BryanChasko/">https://github.com/BryanChasko/</a></p>
     </div>
-</body>
-
-</html>
+    <div class="portfolio-item">
+        <h2>AWS Heroes Bio</h2>
+        <p><a target="_blank"
+                href="https://aws.amazon.com/developer/community/heroes/bryan-chasko/">https://aws.amazon.com/developer/community/heroes/bryan-chasko/</a>
+        </p>
+    </div>
+    <!-- Add more portfolio items as needed -->
+</div>
 {% endblock %}

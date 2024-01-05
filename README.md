@@ -1,6 +1,8 @@
 # Bryan Chasko's Flask Website 🌟
 
-This project is a portfolio website showcasing Bryan Chasko's professional experience, projects, and blog posts. It's built using Flask, HTML templates, and AWS S3 for deployment.
+This project is a website built using Flask, Python, HTML templates, and AWS S3 for deployment. The intent is to utilize as much python as possible throughout the website.
+
+## Next Steps - Routing & setting up custom domain with route53
 
 ## Table of Contents 📜
 
@@ -11,16 +13,6 @@ This project is a portfolio website showcasing Bryan Chasko's professional exper
 - [Deployment](#deployment)
 - [Contributing](#contributing)
 - [License](#license)
-
-## Overview ℹ️
-
-This Flask-based website serves as Bryan Chasko's portfolio. It includes sections for:
-
-- **Home**: Introduction and summary
-- **Experience**: Detailed professional experience and accomplishments
-- **Portfolio**: Showcasing various projects
-- **Blog**: Articles and thoughts
-- **Contact**: Methods to get in touch
 
 ## Project Structure 📂
 
@@ -34,7 +26,7 @@ The main directories and files include:
 ## Installation 🚀
 
 1. Clone the repository.
-2. Set up a virtual environment: `python -m venv venv` and activate it.
+2. Set up a virtual environment: `python3 -m venv foo_venv` and activate it.
 3. Install the dependencies: `pip install -r requirements.txt`.
 
 ## Usage 🖥️
@@ -42,4 +34,17 @@ The main directories and files include:
 To run the Flask app locally:
 
 ```bash
-python app.py
+python3 app.py
+```
+
+## Build
+flask-freeze will create a "build" folder with the built flask project. you're ready to sync the build folder contents to s3.
+
+## Deploy to s3 static website hosting
+from your build directory, run:
+```bash
+aws s3 sync . s3://bryanchaskoflasksite2024/ --delete
+```
+
+
+
