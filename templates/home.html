@@ -1,0 +1,101 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>{{ title }}</title>
+    <style>
+        /* Example CSS for animations */
+        /* Replace this with your desired animation styles */
+        @keyframes move {
+            from {
+                transform: translateX(-100px);
+            }
+
+            to {
+                transform: translateX(0);
+            }
+        }
+
+        .animated {
+            animation: move 1s ease-in-out;
+        }
+
+        /* Some basic styling for the content */
+        .main-content {
+            padding: 20px;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        p {
+            color: #666;
+        }
+
+        /* Style for the event section */
+        .event-section {
+            margin-top: 30px;
+            border: 1px solid #ccc;
+            padding: 15px;
+            border-radius: 5px;
+            background-color: #f8f8f8;
+        }
+
+        .event-details {
+            font-weight: bold;
+        }
+
+        .event-details a {
+            color: #1a1a1a;
+            text-decoration: none;
+        }
+
+        .event-details a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-content">
+        <h1>bryanChasko.com</h1>
+        <p class="animated">Thanks for Visiting!</p>
+        <p>
+            I am building out this site utilizing Python & Flask.
+        </p>
+
+        <!-- Next Event Section -->
+        <div class="event-section">
+            <h2>Next Event</h2>
+            <div class="event-details">
+                <p>
+                    <strong>Using Generative AI in Satellite Imagery....and more!</strong><br>
+                    <strong>Details:</strong><br>
+                    Join us January 11 for the first meeting of 2024 for a great presentation and discussion about how
+                    AWS compute and Machine learning software are being used on-board satellites now to test faster and
+                    more efficient methods for collection and analyzing space-based imagery, generating better returns
+                    for customers. We'll also hear about how Generative AI is being used to learn models for tasking
+                    satellites using natural language.
+                    Kathy O-Donnell of the AWS Aerospace | Satellite Solutions group will be our guest speaker, and just
+                    gave a workshop at re:invent on these topics. Come join us online to hear more!
+                </p>
+                <p>
+                    We won't have an in-person meeting this month, but that's something to look forward to again in
+                    February! See you on January 11!
+                </p>
+                <p>
+                    <a href="https://www.meetup.com/awsaerospace/events/298214167/" target="_blank">Event Link</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+{% endblock %}
